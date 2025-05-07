@@ -1,6 +1,6 @@
-import SearchBar from '../components/SearchBar';
-import RecipeGrid from '../components/RecipeGrid';
 import recettes from '../assets/recettes.json';
+import Header from '../components/Header';
+import RecipeList from '../components/RecipeList';
 import { useState } from 'react';
 
 function Home() {
@@ -8,8 +8,8 @@ function Home() {
 
   return (
     <div>
-      <SearchBar onSearch={setFilteredRecipes} />
-      <RecipeGrid recipes={filteredRecipes} />
+      <Header onSearch={setFilteredRecipes} />
+      <RecipeList />
     </div>
   );
 }

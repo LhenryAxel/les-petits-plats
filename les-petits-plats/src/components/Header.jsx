@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Header.css';
-import logo from '../images/Logo.png';
+import logo from '/public/images/Logo.png'; // Adjust the path as necessary
 import SearchBar from './SearchBar'; 
 
 const Header = ({ onSearch }) => {

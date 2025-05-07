@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Header from './components/Header';
-import RecipeGrid from './components/RecipeGrid';
+import Home from './pages/Home';
 import recettes from './assets/recettes.json';
 
 function App() {
@@ -9,8 +8,7 @@ function App() {
 
   return (
     <>
-      <Header onSearch={setFilteredRecipes} />
-      <RecipeGrid recipes={filteredRecipes} />
+    <Home />
     </>
   );
 }

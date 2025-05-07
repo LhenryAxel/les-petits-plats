@@ -10,7 +10,7 @@
   min-height: 667px;
   width: 100%;
   position: relative;
-  background-image: url('../images/header.png');
+  background-image: url('/public/images/header.png');
   background-size: cover;
   background-position: center;
   overflow: hidden;

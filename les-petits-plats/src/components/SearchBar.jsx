@@ -44,33 +44,3 @@ const SearchBar = ({ onSearch }) => {
   );
 };
 
-const styles = {
-  container: {
-    position: 'relative',
-    width: '100%',
-    margin: '0 auto',
-  },
-  input: {
-    width: '100%',
-    padding: '18px 60px 18px 20px',
-    borderRadius: '10px',
-    border: 'none',
-    fontSize: '16px',
-    boxSizing: 'border-box',
-  },
-  icon: {
-    position: 'absolute',
-    right: '15px',
-    top: '50%',
-    transform: 'translateY(-50%)',
-    backgroundColor: '#1e1e1e',
-    borderRadius: '8px',
-    padding: '10px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    cursor: 'pointer',
-  }
-};
-
-export default SearchBar;

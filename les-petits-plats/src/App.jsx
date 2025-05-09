@@ -5,7 +5,8 @@ import recettes from './assets/recettes.json';
 
 function App() {
   const [filteredRecipes, setFilteredRecipes] = useState(recettes);
-
+  const [activeFilters, setActiveFilters] = useState([]);
+  
   return (
     <>
     <Home />

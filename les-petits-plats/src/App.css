@@ -1,0 +1,37 @@
+.filters-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ✅ aligne à gauche */
+    gap: 15px;
+    padding: 0 80px;
+    margin: 30px 0;
+  }
+  
+  .filters-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .active-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .tag {
+    background-color: #ffd15b;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+  }
+  
+  .tag button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

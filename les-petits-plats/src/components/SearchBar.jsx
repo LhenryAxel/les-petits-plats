@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FiSearch } from 'react-icons/fi'; 
 import recettes from '../assets/recettes.json';
+import '../styles/SearchBar.css';
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -29,19 +30,19 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <div style={styles.container}>
+    <div className="searchbar-container">
       <input
         type="text"
         placeholder="Rechercher une recette, un ingrédient, ..."
         value={query}
         onChange={handleInputChange}
-        style={styles.input}
+        className="searchbar-input"
       />
-      <div style={styles.icon}>
+      <div className="searchbar-icon">
         <FiSearch size={20} color="white" />
       </div>
     </div>
   );
 };
 
-sqs
+export default SearchBar;

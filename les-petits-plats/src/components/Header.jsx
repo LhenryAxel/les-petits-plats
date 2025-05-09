@@ -1,13 +1,12 @@
 import React from 'react';
 import '../styles/Header.css';
-import logo from '/public/images/Logo.png'; // Adjust the path as necessary
 import SearchBar from './SearchBar'; 
 
 const Header = ({ onSearch }) => {
   return (
     <header className="header">
       <div className="header-top">
-        <img src={logo} alt="Logo Les Petits Plats" className="full-logo" />
+      <img src="/images/Logo.png" alt="Logo Les Petits Plats" className="full-logo" />
       </div>
 
       <div className="overlay">

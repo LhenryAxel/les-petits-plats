@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <Header onSearch={setFilteredRecipes} />
-      <RecipeList />
+      <RecipeList recipes={filteredRecipes} />
     </div>
   );
 }

@@ -1,14 +1,17 @@
 import React from 'react';
-import recipes from '../assets/recettes.json'; 
 import RecipeCard from './RecipeCard';
 import '../styles/RecipeList.css'; 
 
-const RecipeList = () => {
+const RecipeList = ({ recipes }) => {
   return (
     <div className="recipe-list">
-      {recipes.map((recipe) => (
-        <RecipeCard key={recipe.id} recipe={recipe} />
-      ))}
+      {recipes.length > 0 ? (
+        recipes.map((recipe) => (
+          <RecipeCard key={recipe.id} recipe={recipe} />
+        ))
+      ) : (
+        <p>Aucune recette trouvée.</p>
+      )}
     </div>
   );
 };
